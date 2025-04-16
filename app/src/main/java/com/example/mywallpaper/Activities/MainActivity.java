@@ -59,10 +59,10 @@ public class MainActivity extends AppCompatActivity implements onRecyclerClickLi
         progressDialog.setTitle("Loading...");
 
         setSupportActionBar(toolbar);
-//        if (getSupportActionBar() != null) {
-//            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-//            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-//        }
+
+
+
+
 
         wallpaperRepository.getCuratedWallpapers(listener, "1", "20");
 
