@@ -60,10 +60,6 @@ public class MainActivity extends AppCompatActivity implements onRecyclerClickLi
 
         setSupportActionBar(toolbar);
 
-
-
-
-
         wallpaperRepository.getCuratedWallpapers(listener, "1", "20");
 
         next_btn.setOnClickListener(v -> {
