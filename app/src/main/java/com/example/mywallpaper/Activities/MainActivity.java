@@ -154,33 +154,6 @@ public class MainActivity extends AppCompatActivity implements onRecyclerClickLi
         return super.onCreateOptionsMenu(menu);
     }
 
-//    @Override
-//    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-//        int id = item.getItemId();
-//        if (id == R.id.action_search) {
-//            SearchView searchView = (SearchView) item.getActionView();
-//            if (searchView != null) {
-//                searchView.setQueryHint("Type here to search...");
-//                searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-//                    @Override
-//                    public boolean onQueryTextSubmit(String query) {
-//                        progressDialog.show();
-//                        wallpaperRepository.getSearchWallpapers(searchListener, "1", "20", query);
-//                        return true;
-//                    }
-//
-//                    @Override
-//                    public boolean onQueryTextChange(String newText) {
-//                        return false;
-//                    }
-//                });
-//            }
-//        } else if (id == R.id.action_gallery) {
-//            PopupMenu popupMenu = new PopupMenu(getApplicationContext(), );
-//        }
-//        return super.onOptionsItemSelected(item);
-//    }
-
     private final SearchWallpaperListener searchListener = new SearchWallpaperListener() {
         @Override
         public void onSuccess(SearchApiResponse response, String message) {
